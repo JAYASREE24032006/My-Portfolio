@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jayasree R · Dual-Degree CS & Data Science Engineer</title>
+  <meta name="description" content="Portfolio of Jayasree R — Dual-degree CS & Data Science student at Saveetha Engineering College & IIT Madras. Specializing in Machine Learning, Full-Stack Development, and Cybersecurity." />
+
+  <!-- Google Fonts: Outfit, Plus Jakarta Sans, JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Outfit:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Background Canvas Grid & Floating Doodles -->
+  <div class="bg-grid"></div>
+  <div class="bg-glow glow-violet"></div>
+  <div class="bg-glow glow-cyan"></div>
+  <div class="bg-glow glow-emerald"></div>
+
+  <!-- Floating Creative Doodles -->
+  <div class="doodle doodle-1">✦</div>
+  <div class="doodle doodle-2">★</div>
+  <div class="doodle doodle-3">✹</div>
+  <div class="doodle doodle-4">▲</div>
+
+  <!-- ── FULL-WIDTH FIXED TOP NAVIGATION ───────────── -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="logo" aria-label="Jayasree R Home">
+        <span class="logo-tag">✦</span>
+        <span class="logo-text">Jayasree<span class="dot">.</span>R</span>
+      </a>
+
+      <ul class="nav-links" role="list">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#achievements" class="nav-link">Achievements</a></li>
+        <li><a href="#certifications" class="nav-link">Certifications</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <!-- Resume Action -->
+        <button class="btn btn-outline-nav" id="openResumeBtn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Resume
+        </button>
+
+        <!-- Theme Toggle -->
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <span class="icon-sun">☀️</span>
+          <span class="icon-moon">🌙</span>
+        </button>
+
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#about" class="mobile-link">About</a>
+      <a href="#education" class="mobile-link">Education</a>
+      <a href="#projects" class="mobile-link">Projects</a>
+      <a href="#experience" class="mobile-link">Experience</a>
+      <a href="#achievements" class="mobile-link">Achievements</a>
+      <a href="#certifications" class="mobile-link">Certifications</a>
+      <a href="#contact" class="mobile-link">Contact</a>
+    </div>
+  </nav>
+
+  <!-- ── HERO SECTION ───────────────────────────────── -->
+  <section id="home" class="hero">
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="status-badge reveal">
+          <span class="status-dot"></span>
+          Dual Degree CSE (SEC) &amp; Data Science (IIT Madras)
+        </div>
+
+        <h1 class="hero-title reveal">
+          Hi, I'm <span class="text-gradient">Jayasree R</span> 👋
+          <span class="title-sub">
+            I craft <span class="typed-text" id="typedText"></span>
+          </span>
+        </h1>
+
+        <p class="hero-bio reveal">
+          Computer Science &amp; Data Science scholar skilled in <strong>Artificial Intelligence</strong> , <strong>Machine Learning</strong> , <strong>Data Science</strong> ,
+          <strong>Software Engineering</strong> and <strong>Full-Stack Web Systems</strong> Driven by first-principles thinking to engineer scalable AI solutions.
+        </p>
+
+        <div class="hero-ctas reveal">
+          <a href="#projects" class="btn btn-primary">
+            Explore Projects ✨
+          </a>
+          <button class="btn btn-secondary" id="heroResumeBtn">
+            View Resume 📄
+          </button>
+        </div>
+
+        <!-- Metric Highlights -->
+        <div class="hero-metrics reveal">
+          <div class="metric-card">
+            <span class="metric-num">Verified</span>
+            <span class="metric-label">Certifications &amp; Badges</span>
+          </div>
+          <div class="metric-divider"></div>
+          <div class="metric-card">
+            <span class="metric-num" data-count="8.6">0</span>
+            <span class="metric-label">BE CSE CGPA (SEC)</span>
+          </div>
+          <div class="metric-divider"></div>
+          <div class="metric-card">
+            <span class="metric-num" data-count="6.7">0</span>
+            <span class="metric-label">BS DS CGPA (IITM)</span>
+          </div>
+          <div class="metric-divider"></div>
+          <div class="metric-card">
+            <span class="metric-num">1st Prize</span>
+            <span class="metric-label">Quantum &amp; Crown Quest</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- TYPE-ONLY INTERACTIVE TERMINAL -->
+      <div class="hero-graphic reveal">
+        <div class="terminal-window">
+          <div class="terminal-header">
+            <div class="terminal-buttons">
+              <span class="btn-term close"></span>
+              <span class="btn-term minimize"></span>
+              <span class="btn-term maximize"></span>
+            </div>
+            <div class="terminal-title">jayasree@dev: ~/terminal-shell</div>
+          </div>
+          <div class="terminal-body" id="terminalBody">
+            <div class="term-line output-text">Type a command to view info &amp; navigate:</div>
+            <div class="term-line output-text c-func">Try typing: 'projects', 'skills', 'certs', 'education', 'contact', 'bio'</div>
+            <div id="terminalHistory"></div>
+            <div class="term-input-row">
+              <span class="c-prompt">jayasree@dev:~$</span>
+              <input type="text" id="termInput" placeholder="type command here & press Enter..." autocomplete="off" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── ABOUT SECTION ──────────────────────────────── -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">✦ 01. ABOUT ME</span>
+        <h2 class="section-title">Bridging AI & Data Science with <span class="text-gradient">Scalable Engineering</span></h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card main-bio reveal">
+          <div class="bio-icon">🎓</div>
+          <h3>Dual-Degree CS &amp; Data Science Scholar</h3>
+          <p>
+            I am currently pursuing a <strong>BE in Computer Science and Engineering</strong> at Saveetha Engineering College (CGPA: 8.6) alongside a <strong>BS in Data Science &amp; Applications</strong> (Diploma Level) at <strong>Indian Institute of Technology Madras (IITM)</strong>.
+          </p>
+          <p>
+            I specialize in designing scalable Machine Learning pipelines and AI-driven applications. Equipped with deep mathematical foundations from IIT Madras and engineering fundamentals from SEC, my technical toolkit spans PyTorch, neural network architectures, statistical modeling, and full-stack integration (React, Flask, Node.js, SQL) to bridge the gap between AI research and production systems.
+          </p>
+        </div>
+
+        <div class="about-card info-card reveal">
+          <h3>Quick Profile Overview</h3>
+          <ul class="info-list">
+            <li>
+              <span class="info-label">Full Name</span>
+              <span class="info-val">Jayasree R</span>
+            </li>
+            <li>
+              <span class="info-label">DOB</span>
+              <span class="info-val">24 March 2006</span>
+            </li>
+            <li>
+              <span class="info-label">Email</span>
+              <span class="info-val"><a href="mailto:jayasree2403206@gmail.com">jayasree2403206@gmail.com</a></span>
+            </li>
+            <li>
+              <span class="info-label">Phone</span>
+              <span class="info-val">+91 8939238010</span>
+            </li>
+            <li>
+              <span class="info-label">GitHub</span>
+              <span class="info-val"><a href="https://github.com/JAYASREE24032006" target="_blank">github.com/JAYASREE24032006</a></span>
+            </li>
+            <li>
+              <span class="info-label">LinkedIn</span>
+              <span class="info-val"><a href="https://www.linkedin.com/in/jayasree240306" target="_blank">linkedin.com/in/jayasree240306</a></span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── EDUCATION SECTION ──────────────────────────── -->
+  <section id="education" class="section bg-surface">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">✦ 02. ACADEMIC JOURNEY</span>
+        <h2 class="section-title">Education &amp; <span class="text-gradient">Academic Badges</span></h2>
+      </div>
+
+      <div class="education-grid">
+        <!-- IIT Madras -->
+        <div class="edu-card reveal">
+          <div class="edu-header">
+            <div class="edu-badge gold-pill">IIT Madras · Diploma Level</div>
+            <span class="edu-cgpa">CGPA: 7.0 / 10.0</span>
+          </div>
+          <h3 class="edu-degree">BS in Data Science and Applications</h3>
+          <h4 class="edu-institution">Indian Institute of Technology Madras (IITM)</h4>
+          <p class="edu-desc">
+            Enrolled 2023 — Present. Completed Foundation Level &amp; currently pursuing Diploma Level coursework in Machine Learning, Computational Thinking, Linear Algebra, Statistics, and Database Systems.
+          </p>
+
+
+          <div class="edu-tags">
+            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" class="pill-icon" alt="" /> Python</span>
+            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" class="pill-icon" alt="" /> Java</span>
+            <span>📐 Advanced Mathematics</span>
+            <span>📱 App Development</span>
+            <span>🧠 Computational Thinking</span>
+            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" class="pill-icon" alt="" /> DBMS</span>
+            <span>🔢 Linear Algebra</span>
+            <span>💻 System Commands</span>
+            <span>🤖 Machine Learning</span>
+            <span>🧬 Data Structures</span>
+          </div>
+        </div>
+
+        <!-- Saveetha Engg College -->
+        <div class="edu-card reveal">
+          <div class="edu-header">
+            <div class="edu-badge">Saveetha Engg College</div>
+            <span class="edu-cgpa accent-amber">CGPA: 8.6 / 10.0</span>
+          </div>
+          <h3 class="edu-degree">BE in Computer Science and Engineering</h3>
+          <h4 class="edu-institution">Saveetha Engineering College (SEC)</h4>
+          <p class="edu-desc">
+            Enrolled 2023 — Present. CSE student specializing in Software Engineering, Web Technologies, Database Architecture, Computer Networks, and Cybersecurity.
+          </p>
+          <div class="edu-tags">
+            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" class="pill-icon" alt="" /> Python</span>
+            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" class="pill-icon" alt="" /> SQL (MySQL / PostgreSQL)</span>
+            <span>🧠 Artificial Intelligence</span>
+            <span>🌐 Web Development</span>
+            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" class="pill-icon" alt="" /> C</span>
+            <span>📱 Mobile App Development</span>
+            <span>🧬 Data Structures</span>
+            <span>🛡️ Cybersecurity</span>
+            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" class="pill-icon" alt="" /> DBMS</span>
+            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" class="pill-icon" alt="" /> Java</span>
+            <span>⚡ Algorithms</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── TECHNICAL SKILLS ───────────────────────────── -->
+  <section id="skills" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">✦ 03. TECHNICAL CAPABILITIES</span>
+        <h2 class="section-title">Skills &amp; <span class="text-gradient">Tech Stack</span></h2>
+      </div>
+
+      <div class="skills-wrapper">
+        <div class="skill-box reveal">
+          <div class="skill-box-header">
+            <span class="box-icon">📊</span>
+            <h3>Core Analytics, Math &amp; ML</h3>
+          </div>
+          <div class="skill-pills">
+            <span class="pill">📈 Probability &amp; Statistics</span>
+            <span class="pill">📐 Linear Algebra</span>
+            <span class="pill">🔢 Mathematical Modeling</span>
+            <span class="pill">🤖 Machine Learning Fundamentals</span>
+            <span class="pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" class="pill-icon" alt="PyTorch" /> PyTorch &amp; Neural Networks</span>
+            <span class="pill">🎯 Predictive Analytics</span>
+            <span class="pill">🧹 Data Mining &amp; Cleaning</span>
+          </div>
+        </div>
+
+        <div class="skill-box reveal">
+          <div class="skill-box-header">
+            <span class="box-icon">💻</span>
+            <h3>Programming Languages &amp; Databases</h3>
+          </div>
+          <div class="skill-pills">
+            <span class="pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" class="pill-icon" alt="Python" /> Python</span>
+            <span class="pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" class="pill-icon" alt="Java" /> Java</span>
+            <span class="pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" class="pill-icon" alt="C" /> C</span>
+            <span class="pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" class="pill-icon" alt="SQL" /> SQL (PostgreSQL / SQLite / MySQL)</span>
+            <span class="pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" class="pill-icon" alt="PHP" /> PHP</span>
+            <span class="pill">🧬 Data Structures &amp; Algorithms</span>
+            <span class="pill">📊 Advanced Excel</span>
+          </div>
+        </div>
+
+        <div class="skill-box reveal">
+          <div class="skill-box-header">
+            <span class="box-icon">🌐</span>
+            <h3>Web Frameworks &amp; Tools</h3>
+          </div>
+          <div class="skill-pills">
+            <span class="pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" class="pill-icon" alt="React" /> React.js</span>
+            <span class="pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" class="pill-icon" alt="Node" /> Node.js</span>
+            <span class="pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" class="pill-icon" alt="Express" /> Express.js</span>
+            <span class="pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" class="pill-icon" alt="Flask" /> Flask &amp; SQLAlchemy</span>
+            <span class="pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="pill-icon" alt="JS" /> JavaScript (ES6+)</span>
+            <span class="pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="pill-icon" alt="HTML5" /> HTML5 / CSS3 / Bootstrap 5</span>
+            <span class="pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg" class="pill-icon" alt="Jupyter" /> Jupyter Notebook</span>
+            <span class="pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" class="pill-icon" alt="Git" /> Git &amp; GitHub</span>
+          </div>
+        </div>
+
+        <div class="skill-box reveal">
+          <div class="skill-box-header">
+            <span class="box-icon">🛡️</span>
+            <h3>Cybersecurity, Forensics &amp; Soft Skills</h3>
+          </div>
+          <div class="skill-pills">
+            <span class="pill">🛡️ Ethical Hacking</span>
+            <span class="pill">🔍 Vulnerability Assessment</span>
+            <span class="pill">⚔️ Nmap &amp; Metasploit</span>
+            <span class="pill">🔬 Digital Forensics (Autopsy)</span>
+            <span class="pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" class="pill-icon" alt="Linux" /> Kali Linux</span>
+            <span class="pill">🦈 Burp Suite &amp; Wireshark</span>
+            <span class="pill">💡 First-Principles Problem Solving</span>
+            <span class="pill">👥 Team Leadership</span>
+            <span class="pill">💬 Analytical Communication</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PROJECTS SECTION (WITH VIEW DETAILS / OVERVIEW BUTTON) ── -->
+  <section id="projects" class="section bg-surface">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">✦ 04. FEATURED BUILDS</span>
+        <h2 class="section-title"><span class="text-gradient">Projects</span></h2>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1: TALENTGRID -->
+        <div class="project-card reveal" id="proj-talentgrid">
+          <div class="card-image-box">
+            <img src="images/talentgrid.png" alt="TALENTGRID Recruitment Analytics" onerror="this.outerHTML='<div class=\'upload-placeholder\'><span>🖼️ Upload TALENTGRID Front Page Image</span></div>';" />
+          </div>
+          <div class="project-top">
+            <span class="proj-badge amber">Recruitment Analytics</span>
+            <div class="proj-links">
+              <a href="https://github.com/JAYASREE24032006/TALENTGRID-Placement-Portal-Application" target="_blank" aria-label="GitHub Repo">🔗</a>
+            </div>
+          </div>
+          <h3 class="proj-title">TALENTGRID — Recruitment Workflow &amp; Analytics</h3>
+          <p class="proj-desc">
+            Engineered a multi-tenant recruitment platform featuring distinct operational dashboards for Admins, Corporate Recruiters, and Candidates. Designed relational database schemas utilizing SQLAlchemy to manage dynamic application workflows, candidate eligibility filtering, and real-time recruitment funnel analytics.
+          </p>
+          <div class="proj-tech">
+            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" class="pill-icon" alt="" /> Python</span><span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" class="pill-icon" alt="" /> Flask</span><span>🛢️ SQLite</span><span>🧪 Flask-SQLAlchemy</span><span>📜 Jinja2</span><span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" class="pill-icon" alt="" /> Bootstrap 5</span><span>📊 Chart.js</span>
+          </div>
+          <div class="project-card-actions">
+            <button class="btn btn-secondary btn-sm view-project-btn" data-project="talentgrid">
+              View Overview &amp; Details 🔍
+            </button>
+          </div>
+        </div>
+
+        <!-- Project 2: TREKORA -->
+        <div class="project-card reveal" id="proj-trekora">
+          <div class="card-image-box">
+            <img src="images/trekora.png" alt="TREKORA Adventure Logistics" onerror="this.outerHTML='<div class=\'upload-placeholder\'><span>🖼️ Upload TREKORA Front Page Image</span></div>';" />
+          </div>
+          <div class="project-top">
+            <span class="proj-badge">Adventure Logistics</span>
+            <div class="proj-links">
+              <a href="https://github.com/JAYASREE24032006/TREKORA-Trekking-Management-App" target="_blank" aria-label="GitHub Repo">🔗</a>
+            </div>
+          </div>
+          <h3 class="proj-title">TREKORA — Adventure Logistics Platform</h3>
+          <p class="proj-desc">
+            Engineered a role-based management system with specialized operational dashboards and real-time relational databases to orchestrate booking histories, participant allocations, and dynamic route inventories. Implemented systemic control states enabling staff to manage trek lifecycles while empowering admins to oversee unified search.
+          </p>
+          <div class="proj-tech">
+            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" class="pill-icon" alt="" /> Python</span><span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" class="pill-icon" alt="" /> Flask</span><span>🛢️ SQLite</span><span>🧪 Flask-SQLAlchemy</span><span>📜 Jinja2</span><span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" class="pill-icon" alt="" /> Bootstrap 5</span>
+          </div>
+          <div class="project-card-actions">
+            <button class="btn btn-secondary btn-sm view-project-btn" data-project="trekora">
+              View Overview &amp; Details 🔍
+            </button>
+          </div>
+        </div>
+
+        <!-- Project 3: INFINITICOOK -->
+        <div class="project-card reveal" id="proj-infiniticook">
+          <div class="card-image-box">
+            <img src="images/infinitycook.png" alt="INFINITICOOK Recipe Platform" onerror="this.outerHTML='<div class=\'upload-placeholder\'><span>🖼️ Upload INFINITICOOK Front Page Image</span></div>';" />
+          </div>
+          <div class="project-top">
+            <span class="proj-badge amber">CIRF Intern Project</span>
+            <div class="proj-links">
+              <a href="https://github.com/JAYASREE24032006/INFINITYCOOK-Food-Recipe-App" target="_blank" aria-label="GitHub Repo">🔗</a>
+            </div>
+          </div>
+          <h3 class="proj-title">INFINITICOOK — Recipe Management Platform</h3>
+          <p class="proj-desc">
+            Designed and deployed a full-stack recipe management application during CIRF Technology internship. Configured modular database structures to handle complex multi-cuisine category filtering, recipe submissions, user accounts, saved recipes, and responsive rendering.
+          </p>
+          <div class="proj-tech">
+            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="pill-icon" alt="" /> HTML5</span><span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" class="pill-icon" alt="" /> CSS3</span><span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" class="pill-icon" alt="" /> Bootstrap 5</span><span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="pill-icon" alt="" /> JavaScript</span><span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" class="pill-icon" alt="" /> PHP</span><span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" class="pill-icon" alt="" /> MySQL</span>
+          </div>
+          <div class="project-card-actions">
+            <button class="btn btn-secondary btn-sm view-project-btn" data-project="infiniticook">
+              View Overview &amp; Details 🔍
+            </button>
+          </div>
+        </div>
+
+        <!-- Project 4: SHIELD -->
+        <div class="project-card reveal" id="proj-shield">
+          <div class="card-image-box">
+            <img src="images/shield.png" alt="SHIELD Agentic AI SSO" onerror="this.outerHTML='<div class=\'upload-placeholder\'><span>🖼️ Upload SHIELD Front Page Image</span></div>';" />
+          </div>
+          <div class="project-top">
+            <span class="proj-badge amber">Agentic AI &amp; Security</span>
+            <div class="proj-links">
+              <a href="https://github.com/JAYASREE24032006/SHEILD-Agentic-AI-Driven-SSO-System" target="_blank" aria-label="GitHub Repo">🔗</a>
+            </div>
+          </div>
+          <h3 class="proj-title">SHIELD — Agentic AI Single Sign-On</h3>
+          <p class="proj-desc">
+            Built an Agentic AI–driven SSO system enabling unified single login across multiple applications with real-time anomaly monitoring, forced global logout capabilities, JWT token verification, and Redis session state management.
+          </p>
+          <div class="proj-tech">
+            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" class="pill-icon" alt="" /> Python</span><span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" class="pill-icon" alt="" /> Flask</span><span>🔐 JWT</span><span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" class="pill-icon" alt="" /> Redis</span><span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" class="pill-icon" alt="" /> React</span><span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" class="pill-icon" alt="" /> Node.js</span>
+          </div>
+          <div class="project-card-actions">
+            <button class="btn btn-secondary btn-sm view-project-btn" data-project="shield">
+              View Overview &amp; Details 🔍
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── EXPERIENCE SECTION ─────────────────────────── -->
+  <section id="experience" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">✦ 05. EXPERIENCE REPORTS</span>
+        <h2 class="section-title">Industry <span class="text-gradient">Internships</span></h2>
+      </div>
+
+      <div class="timeline">
+        <!-- Internship 1: CIRF Technology -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Web Development Intern</h3>
+                <h4 class="timeline-company">CIRF Technology</h4>
+              </div>
+              <span class="timeline-date">July 1 — July 15, 2024</span>
+            </div>
+            <p class="timeline-text">
+              <Strong>Engineered INFINITICOOK : </Strong>Built and deployed a full-stack recipe management application using PHP, MySQL, and JavaScript.
+            </p>
+            <p class="timeline-text">
+              <Strong>Optimized Data Retrieval : </Strong>Designed modular database schemas and optimized queries to handle complex multi-category filtering efficiently.
+            </p>
+            <p class="timeline-text">
+              <Strong>Responsive UI Design : </Strong>Formatted front-end interfaces using HTML5, CSS3, and Bootstrap for full cross-device responsiveness.
+            </p>
+            <div class="timeline-tags">
+              <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="pill-icon" alt="" /> HTML5</span><span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" class="pill-icon" alt="" /> CSS3</span><span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" class="pill-icon" alt="" /> Bootstrap</span><span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="pill-icon" alt="" /> JavaScript</span><span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" class="pill-icon" alt="" /> PHP</span><span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" class="pill-icon" alt="" /> MySQL</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Internship 2: Zybeak Technologies -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Cybersecurity &amp; Ethical Hacking Intern</h3>
+                <h4 class="timeline-company">Zybeak Technologies Pvt. Ltd.</h4>
+              </div>
+              <span class="timeline-date">Jan 2 — Jan 31, 2025</span>
+            </div>
+            <p class="timeline-text">
+              <strong>Vulnerability Assessment : </strong>Executed network and system security audits using Nmap, Metasploit, and Burp Suite to identify potential threats.
+            </p>
+            <p class="timeline-text">
+              <strong>Exploitation & Testing : </strong>Performed simulated SQL injection attacks in controlled lab environments to evaluate application defenses.
+            </p>
+            <p class="timeline-text">
+              <strong>Digital Forensics : </strong>Analyzed system artifacts and forensic evidence using Autopsy on Kali Linux to practice incident response workflows.
+            </p>
+            <div class="timeline-tags">
+              <span>🛡️ Ethical Hacking</span><span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" class="pill-icon" alt="" /> Kali Linux</span><span>⚔️ Nmap</span><span>⚡ Metasploit</span><span>🦈 Burp Suite</span><span>💉 SQL Injection</span><span>🔬 Digital Forensics</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── ACHIEVEMENTS SECTION (WITH IMAGE BOXES ADDED!) ── -->
+  <section id="achievements" class="section bg-surface">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">✦ 06. RECOGNITION &amp; HONORS</span>
+        <h2 class="section-title">Key <span class="text-gradient">Achievements</span></h2>
+      </div>
+
+      <div class="achievements-grid">
+        <!-- Crown Quest Math Competition -->
+        <div class="achievement-card reveal">
+          <div class="card-image-box ach-img">
+            <img src="images/crown.jpg" alt="Crown Quest 1st Prize" />
+          </div>
+          <div class="ach-content-wrapper">
+            <div class="ach-icon gold">🏆</div>
+            <div class="ach-content">
+              <span class="ach-badge gold">1st Prize Winner</span>
+              <h3>Winner (1st Prize) – 'Crown Quest'</h3>
+              <p>Organized by the Math Club at Saveetha Engineering College (March 2026); demonstrated elite quantitative and speed-problem-solving skills.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- IIT Madras Foundation Finisher & Topper -->
+        <div class="achievement-card reveal">
+          <div class="card-image-box ach-img">
+            <img src="images/iiitm.png" alt="IIT Madras Foundation Finisher" />
+          </div>
+          <div class="ach-content-wrapper">
+            <div class="ach-icon teal">🎓</div>
+            <div class="ach-content">
+              <span class="ach-badge gold">IITM Honors</span>
+              <h3>Foundation Finisher &amp; Top Course Grade Badges</h3>
+              <p>Recognized by IIT Madras for stellar academic completion and exam performance during the BS Data Science Foundation Level.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quantum Computing Tournament -->
+        <div class="achievement-card reveal">
+          <div class="card-image-box ach-img">
+            <img src="images/quantum.jpeg" alt="Quantum Computing Tournament 1st Prize" />
+          </div>
+          <div class="ach-content-wrapper">
+            <div class="ach-icon gold">⚛️</div>
+            <div class="ach-content">
+              <span class="ach-badge gold">1st Prize Winner</span>
+              <h3>Winner (1st Prize) – Quantum Computing Tournament</h3>
+              <p>Secured <strong>1st Prize</strong> in Quantum Computing competition, demonstrating advanced algorithm solving and speed computation.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Kurukshetra CTF -->
+        <div class="achievement-card reveal">
+          <div class="card-image-box ach-img">
+            <img src="images/netrunner.png" alt="Kurukshetra CTF" />
+          </div>
+          <div class="ach-content-wrapper">
+            <div class="ach-icon purple">🛡️</div>
+            <div class="ach-content">
+              <span class="ach-badge">Cybersecurity CTF</span>
+              <h3>NETRUNNER'S GAUNTLET — Kurukshetra'26</h3>
+              <p>Qualified &amp; competed in Anna University (CEG) / IEEE Kurukshetra'26 Cybersecurity Capture The Flag (CTF) tournament.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- IBM Z Datathon 2025 -->
+        <div class="achievement-card reveal">
+          <div class="card-image-box ach-img">
+            <img src="images/ibm.png" alt="IBM Z Datathon 2025" />
+          </div>
+          <div class="ach-content-wrapper">
+            <div class="ach-icon blue">⚡</div>
+            <div class="ach-content">
+              <span class="ach-badge">Enterprise Tech</span>
+              <h3>IBM Z Datathon 2025</h3>
+              <p>Participated in IBM Z enterprise cloud and big data computing challenge.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sri Eshwar THIRAN AI Agentathon -->
+        <div class="achievement-card reveal">
+          <div class="card-image-box ach-img">
+            <img src="images/sri.jpeg" alt="Sri Eshwar THIRAN AI Agentathon" />
+          </div>
+          <div class="ach-content-wrapper">
+            <div class="ach-icon emerald">🚀</div>
+            <div class="ach-content">
+              <span class="ach-badge">AI Hackathon</span>
+              <h3>THIRAN 2026 — AI-Agentathon</h3>
+              <p>Participated in Sri Eshwar College of Engineering's national-level AI Agent building hackathon.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- MIRAI ENZAN National Level Symposium -->
+        <div class="achievement-card reveal">
+          <div class="card-image-box ach-img">
+            <img src="images/meenakshi.jpeg" alt="MIRAI ENZAN Meenakshi College Certificate" />
+          </div>
+          <div class="ach-content-wrapper">
+            <div class="ach-icon cyan">🎌</div>
+            <div class="ach-content">
+              <span class="ach-badge">National Symposium</span>
+              <h3>MIRAI ENZAN — National Technical Symposium</h3>
+              <p>Participated in Meenakshi College of Engineering's national-level symposium in technical paper presentation &amp; coding events.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="achievement-card reveal">
+          <div class="card-image-box ach-img">
+            <img src="images/deloitte.png" alt="Deloitte Certificate" />
+          </div>
+          <div class="ach-content-wrapper">
+            <div class="ach-icon gold">🏆</div>
+            <div class="ach-content">
+              <span class="ach-badge gold">1st Prize Winner</span>
+              <h3>Deloitte Certificate of Excellence</h3>
+              <p>Received for outstanding performance and contributions in the Deloitte Data Analytics program.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ideas for Vision - Viksit Bharat @2047 -->
+        <div class="achievement-card reveal">
+          <div class="card-image-box ach-img">
+            <img src="images/viksit.jpeg" alt="Ideas for Vision Viksit Bharat @2047 Certificate" />
+          </div>
+          <div class="ach-content-wrapper">
+            <div class="ach-icon gold">🏛️</div>
+            <div class="ach-content">
+              <span class="ach-badge gold">Govt Recognition</span>
+              <h3>Ideas for Vision – Viksit Bharat @2047</h3>
+              <p>Recognized proposal submission on national technology infrastructure for MyGov &amp; Government of India initiative.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- MY Bharat Budget Quest 2026 -->
+        <div class="achievement-card reveal">
+          <div class="card-image-box ach-img">
+            <img src="images/mybharat.png" alt="MY Bharat Budget Quest 2026 Certificate" />
+          </div>
+          <div class="ach-content-wrapper">
+            <div class="ach-icon blue">📜</div>
+            <div class="ach-content">
+              <span class="ach-badge">National Challenge</span>
+              <h3>MY Bharat Budget Quest 2026</h3>
+              <p>Recognized participant in Ministry of Youth Affairs national economic analysis &amp; policy formulation challenge.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- NPTEL Silver Medalist -->
+        <div class="achievement-card reveal">
+          <div class="card-image-box ach-img">
+            <img src="images/nptel.png" alt="NPTEL Elite Silver Certificate" />
+          </div>
+          <div class="ach-content-wrapper">
+            <div class="ach-icon gold">🥈</div>
+            <div class="ach-content">
+              <span class="ach-badge gold">IIT Academic Honor</span>
+              <h3>NPTEL Silver Medalist — Internet of Things</h3>
+              <p>Awarded Elite Silver Medal distinction by NPTEL &amp; IIT Kharagpur with 85% consolidated score in 12-week IoT course.</p>
+            </div>
+          </div>
+        </div>
+
+
+
+        <!-- Commonwealth Bank Simulation -->
+        <div class="achievement-card reveal">
+          <div class="card-image-box ach-img">
+            <img src="images/cba.png" alt="Commonwealth Bank Certificate" />
+          </div>
+          <div class="ach-content-wrapper">
+            <div class="ach-icon emerald">🏦</div>
+            <div class="ach-content">
+              <span class="ach-badge">Global Finance Tech</span>
+              <h3>Commonwealth Bank Software Engineering</h3>
+              <p>Completed corporate software engineering simulation designing scalable banking algorithms &amp; data architecture.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CERTIFICATIONS SECTION ─────────────────────── -->
+  <section id="certifications" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">✦ 07. VERIFIED CREDENTIALS</span>
+        <h2 class="section-title">Certifications &amp; <span class="text-gradient">Licenses</span></h2>
+      </div>
+
+      <!-- Search and Filter Controls -->
+      <div class="cert-controls reveal">
+        <div class="cert-search-box">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input type="text" id="certSearch" placeholder="Search certifications (e.g. PyTorch, Oracle, AWS, Google, Cisco, IITM)..." />
+        </div>
+
+        <div class="cert-filter">
+          <button class="cert-tab active" data-filter="all">All</button>
+          <button class="cert-tab" data-filter="ai">AI &amp; ML</button>
+          <button class="cert-tab" data-filter="data-science">Data Science</button>
+          <button class="cert-tab" data-filter="ethical-hacking">Ethical Hacking</button>
+          <button class="cert-tab" data-filter="cybersecurity">Cybersecurity</button>
+          <button class="cert-tab" data-filter="forensics">Digital Forensics</button>
+          <button class="cert-tab" data-filter="web-cloud">Web &amp; Cloud</button>
+          <button class="cert-tab" data-filter="soft-skills">Soft Skills &amp; Leadership</button>
+          <button class="cert-tab" data-filter="iitm">IITM &amp; Academic</button>
+        </div>
+      </div>
+
+      <div class="cert-grid" id="certGrid">
+        <!-- Dynamic All Certifications populated via script.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT SECTION ────────────────────────────── -->
+  <section id="contact" class="section bg-surface">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">✦ 08. GET IN TOUCH</span>
+        <h2 class="section-title">Let's Connect &amp; <span class="text-gradient">Collaborate</span></h2>
+      </div>
+
+      <div class="contact-layout">
+        <div class="contact-info reveal">
+          <h3>Ready to build something impactful?</h3>
+          <p>
+            Whether you are looking for a Data Scientist, ML Engineer, or Full-Stack Developer — I'm open to discussing opportunities, projects, and research collaborations.
+          </p>
+
+          <div class="contact-links">
+            <a href="mailto:jayasree2403206@gmail.com" class="contact-item">
+              <div class="icon-wrap">✉️</div>
+              <div>
+                <span class="item-label">Direct Email</span>
+                <span class="item-val">jayasree2403206@gmail.com</span>
+              </div>
+            </a>
+
+            <a href="https://api.whatsapp.com/send?phone=918939238010" target="_blank" class="contact-item">
+              <div class="icon-wrap">💬</div>
+              <div>
+                <span class="item-label">Direct WhatsApp</span>
+                <span class="item-val">+91 8939238010</span>
+              </div>
+            </a>
+
+            <a href="tel:+918939238010" class="contact-item">
+              <div class="icon-wrap">📞</div>
+              <div>
+                <span class="item-label">Phone Call</span>
+                <span class="item-val">+91 8939238010</span>
+              </div>
+            </a>
+
+            <a href="https://www.linkedin.com/in/jayasree240306" target="_blank" class="contact-item">
+              <div class="icon-wrap">💼</div>
+              <div>
+                <span class="item-label">LinkedIn Profile</span>
+                <span class="item-val">linkedin.com/in/jayasree240306</span>
+              </div>
+            </a>
+
+            <a href="https://github.com/JAYASREE24032006" target="_blank" class="contact-item">
+              <div class="icon-wrap">🐙</div>
+              <div>
+                <span class="item-label">GitHub Repositories</span>
+                <span class="item-val">github.com/JAYASREE24032006</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-form-box reveal">
+          <form id="contactForm" action="https://formsubmit.co/jayasree2403206@gmail.com" method="POST" novalidate>
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" required placeholder="Enter your full name" />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <input type="email" id="email" name="email" required placeholder="name@example.com" />
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" required placeholder="Project discussion / Role opportunity" />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required placeholder="Write your message here..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block" style="background: #25D366; border-color: #25D366; color: #ffffff;">
+              Send via WhatsApp 💬
+            </button>
+            <a href="mailto:jayasree2403206@gmail.com" class="btn btn-secondary btn-block" style="margin-top: 0.5rem; justify-content: center;">
+              Or Send via Email App ✉️
+            </a>
+            <div id="formStatus" class="form-status"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ─────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-copy">
+        Designed &amp; Developed by <strong>Jayasree R</strong> · Dual-Degree CS &amp; Data Science Engineer
+      </div>
+      <div class="footer-links">
+        <a href="https://github.com/JAYASREE24032006" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/jayasree240306" target="_blank">LinkedIn</a>
+        <a href="mailto:jayasree2403206@gmail.com">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ── DEDICATED PROJECT OVERVIEW MODAL ───────────── -->
+  <div class="modal-overlay" id="projectModal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 id="projModalTitle">Project Details</h3>
+        <button class="modal-close" id="closeProjModalBtn">&times;</button>
+      </div>
+      <div class="modal-body" id="projModalBody">
+        <!-- Dynamic rich project details populated via script.js -->
+      </div>
+      <div class="modal-footer" id="projModalFooter">
+        <a href="https://github.com/JAYASREE24032006" target="_blank" class="btn btn-primary">
+          View Repository on GitHub 🐙
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── RESUME MODAL ───────────────────────────────── -->
+  <div class="modal-overlay" id="resumeModal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3>Jayasree R — Official Resume</h3>
+        <button class="modal-close" id="closeResumeBtn">&times;</button>
+      </div>
+      <div class="modal-body" id="resumeModalBody">
+        <div class="cv-header">
+          <h2>JAYASREE R</h2>
+          <p>Email: jayasree2403206@gmail.com | Mobile: +91 8939238010</p>
+          <p>LinkedIn: linkedin.com/in/jayasree240306 | GitHub: github.com/JAYASREE24032006</p>
+        </div>
+        
+        <div class="cv-section">
+          <h4>OBJECTIVE</h4>
+          <p>Dual-degree Computer Science and Data Science student with a strong foundation in Statistics, Probability, and Machine Learning. Aiming to apply first-principles thinking, mathematical modeling, and full-stack technical skills to solve complex business problems and drive data-backed insights.</p>
+        </div>
+
+        <div class="cv-section">
+          <h4>EDUCATION</h4>
+          <div class="cv-item">
+            <div class="cv-item-title">
+              <span>Indian Institute of Technology Madras (IITM)</span>
+              <span>2023 – Present</span>
+            </div>
+            <div class="cv-item-sub">BS in Data Science and Applications | CGPA: 7.0</div>
+          </div>
+          <div class="cv-item">
+            <div class="cv-item-title">
+              <span>Saveetha Engineering College</span>
+              <span>2023 – Present</span>
+            </div>
+            <div class="cv-item-sub">BE Computer Science and Engineering | CGPA: 8.6</div>
+          </div>
+        </div>
+
+        <div class="cv-section">
+          <h4>SKILLS</h4>
+          <p><strong>Core Analytics &amp; Math:</strong> Probability, Statistics, Linear Algebra, Mathematical Modeling, Machine Learning Fundamentals.</p>
+          <p><strong>Programming &amp; Data:</strong> Python, Java, SQL, Data Structures &amp; Algorithms.</p>
+          <p><strong>Web &amp; Tools:</strong> React, Node.js, Express, JavaScript, Jupyter Notebook, Git/GitHub, Advanced Excel (Data Manipulation).</p>
+          <p><strong>Soft Skills:</strong> Team Leadership, First-Principles Problem Solving, Analytical Communication, Collaborative Learning.</p>
+        </div>
+
+        <div class="cv-section">
+          <h4>EXPERIENCE</h4>
+          <div class="cv-item">
+            <div class="cv-item-title">
+              <span>WEB DEVELOPMENT INTERN | CIRF TECHNOLOGY</span>
+            </div>
+            <p>Designed and deployed a full-stack recipe management application (INFINITICOOK), configuring modular database structures to handle complex category filtering and clean data rendering.</p>
+          </div>
+        </div>
+
+        <div class="cv-section">
+          <h4>PROJECTS</h4>
+          <div class="cv-item">
+            <div class="cv-item-title">
+              <span>ADVENTURE LOGISTICS PLATFORM | TREKORA</span>
+            </div>
+            <div class="cv-item-sub">Tech Stack: Python, Flask, SQLite, Flask-SQLAlchemy, Jinja2, Bootstrap 5</div>
+            <p>• Engineered a role-based management system with specialized operational dashboards and real-time relational databases to orchestrate booking histories, participant allocations, and dynamic route inventories.</p>
+            <p>• Implemented systemic control states enabling staff to manage trek lifecycles while empowering admins to oversee unified search and status tracking across all system entities.</p>
+          </div>
+
+          <div class="cv-item">
+            <div class="cv-item-title">
+              <span>RECRUITMENT WORKFLOW &amp; ANALYTICS PLATFORM | TALENTGRID</span>
+            </div>
+            <div class="cv-item-sub">Tech Stack: Python, Flask, SQLite, Flask-SQLAlchemy, Jinja2, Bootstrap 5, Chart.js</div>
+            <p>• Engineered a multi-tenant recruitment platform with a custom Neobrutalist UI, featuring distinct access controls and operational dashboards for Admins, Corporate Recruiters, and Candidates.</p>
+            <p>• Designed relational database schemas utilizing SQLAlchemy to manage dynamic application workflows, job eligibility filtering, and live funnel metrics visualized via Chart.js analytics.</p>
+          </div>
+        </div>
+
+        <div class="cv-section">
+          <h4>ACHIEVEMENTS</h4>
+          <p>• <strong>Winner (1st Prize) – 'Crown Quest':</strong> Organized by the Math Club at Saveetha Engineering College (March 2026); demonstrated elite quantitative and speed-problem-solving skills.</p>
+          <p>• <strong>Foundation Finisher &amp; Top Course Grade Badges:</strong> Recognized by IIT Madras for stellar academic completion and exam performance during the BS Data Science Foundation Level.</p>
+        </div>
+
+        <div class="cv-section">
+          <h4>CERTIFICATES</h4>
+          <p>• <strong>IITM FOUNDATION PROGRAM</strong> | IIT MADRAS — Verified expertise in Statistics, Probability, Linear Algebra, and Computational Thinking.</p>
+          <p>• <strong>FUNDAMENTALS OF DATABASE: SQL</strong> | ORACLE — Documented mastery of relational database concepts, querying structures, and data management.</p>
+          <p>• <strong>PYTORCH ULTIMATE SPECIALIZATION &amp; ML FOUNDATIONS</strong> | COURSERA / AWS — Advanced coursework in neural networks, model evaluation, and cloud-driven machine learning workflows.</p>
+          <p>• <strong>CRASH COURSE ON PYTHON</strong> | GOOGLE — Focused on core scripting structures, algorithms, and data-driven problem-solving methodologies.</p>
+          <p>• <strong>INTRODUCTION TO CLOUD 101</strong> | AMAZON WEB SERVICES — Built underlying competencies in modern cloud architectures and scalable system environments.</p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="Jayasree_R_Resume.pdf" target="_blank" class="btn btn-primary" id="downloadResumeAction">
+          Open Official PDF Resume 📄
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
